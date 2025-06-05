@@ -2855,31 +2855,6 @@ int main(int argc,char** argv)
     testZeidel_if(n, myid);
     testZeidel(n,myid);
     testJacobi(n, myid);
-    //for (int i = 2; i < 5; i++)
-    //{
-    //        omp_set_num_threads(i);
-    //        if (myid == 0)
-    //        {
-    //            std::cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
-    //            std::cout << "Threads: " << omp_get_max_threads() << std::endl;
-    //        }
-    //        MPI_Barrier(MPI_COMM_WORLD);
-    //        testJacobiMPIompSend_Recv(n, argc, argv);
-    //        testJacobiMPIompSR(n, argc, argv);
-    //        testJacobiMPIompISend_IRecv(n, argc, argv);
-    //        testZeidelMPIompSend_Recv(n, argc, argv);
-    //        testZeidelMPIompSR(n, argc, argv);
-    //        testZeidelMPIompISend_IRecv(n, argc, argv);
-    //        //testompJacobi_Zeidel(n, myid);
-    //        MPI_Barrier(MPI_COMM_WORLD);
-    //        if (myid == 0)
-    //            std::cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
-    //        std::cout << std::endl;
-    //        std::cout << std::endl;
-    //        std::cout << std::endl;
-    //}
-    //mpitest(argc,argv);
-   // std::cout << "Hello World!\n";
-   MPI_Finalize();
+    MPI_Finalize();
     return 0;
 }
